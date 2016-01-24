@@ -1,2 +1,0 @@
-# AMZGraph
-AMZGraph
