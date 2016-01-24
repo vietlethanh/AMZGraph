@@ -1,0 +1,398 @@
+#MyPointsPage
+{
+	.my-points-header
+	{
+		margin-bottom: 20px;
+	}
+	.my-points-content
+	{
+		//New UI
+		position: relative;
+		top: -35px;
+		.points-box
+		{
+			height:85px;
+			transform: skew(0deg ,-7deg);
+			margin-top: 10px;
+		}
+		.my-points-toward-box
+		{
+			background: #0fb0bd;
+			margin-bottom: 15px;
+		}
+		.redeemable-points-box
+		{
+		    background: #fcc20f;
+			margin-bottom: 15px;
+		}
+		.my-points-toward-text , .redeemable-points-text
+		{
+			margin-top: 15px;
+			text-align: center;
+			font-size: 15px;
+		}
+		.points-content
+		{
+			position: absolute;
+			.title
+			{
+				width: 51%;
+				float: left;
+				text-align:left;
+				font-size:20px;
+				font-weight:bold;
+				line-height: 22px;
+			}
+			.my-points
+			{
+				width: 40%;
+				float: left;
+				text-align:right;
+				font-size: 42px;
+				color: white;
+				font-weight:bold;
+				margin-top: -48px;
+				padding-right: 7px;
+			}
+		}
+
+		.my-points-toward ,.redeemable-points
+		{
+			top: 50px;
+		}
+		
+		.expiring-points
+		{
+			top: 232px;
+		}
+		.my-rewards
+		{
+			margin-top: 15px;
+			margin-bottom: 40px;
+			width:100%;
+			table 
+			{	
+				width: 100% ; 
+				border-collapse: separate; 
+				margin: 0 auto;
+				tr th{ background: #1B75BC;color: white; padding: 10px 10px;}
+				tr td {border-top: 1px solid #e9e3ce; padding: 10px 10px;}
+				.date
+				{
+					width: 24%;
+					font-size: 17px;
+					text-align: left;
+				}
+				.name
+				{
+					width: 50%;
+					font-size: 17px;
+					text-align: center;
+				}
+				.expires
+				{
+					width: 25%;
+					font-size: 17px;
+					text-align: right;
+				}
+			}
+			
+		}
+		.program-details-skew
+		{
+			    height: 130px;
+				transform: skew(0deg, -6deg);
+				background: #e6e7e8;
+				position: relative;
+				top: 0px;
+		}
+		.program-details
+		{
+			padding-bottom: 30px;
+			background-size: 100% 100%;
+			background: #e6e7e8;
+			top: -80px;
+			position: relative;
+			.title
+			{
+				font-size: 22px;
+				color:black;
+				text-align: center;
+				color: $myPointsBox;
+				font-weight: bold;
+			}
+			.content 
+			{
+				font-size: 20px;
+				padding: 5px 10px 20px 10px;
+			}
+		} 
+	}
+}
+@media (min-width:$screen-md-min) and (max-width:$screen-lg-min)  
+{
+	#MyPointsPage
+	{
+		.my-points-content
+		{
+			.points-content
+			{
+				.title
+				{
+						font-size:20px;
+						width: 49% !important;
+				}
+				.my-points
+				{
+						font-size:40px;
+						margin-top: -35px;
+						width: 45% !important;
+				}
+			}
+			.my-points-toward ,.redeemable-points
+			{
+				    top: 44px !important;
+			}
+		}
+		.program-details
+		{
+			.col-sm-4
+			{
+				width:33.33333% !important;
+			}
+		}
+		.program-details-skew 
+		{
+			top: -15px !important;
+		}
+	}
+}
+@media (min-width:$screen-sm-min) and (max-width:$screen-md-min)  
+{
+	#MyPointsPage
+	{
+		.my-points-content
+		{
+			.points-content
+			{
+				.title
+				{
+						font-size:19px;
+						width: 47% !important;
+				}
+				.my-points
+				{
+						font-size:35px;
+						margin-top: -20px;
+						padding-right: 0px;
+						width: 43% !important;
+				}
+			}
+
+		    .my-points-toward ,.redeemable-points
+			{
+				    top: 40px !important;
+			}
+		}
+		.program-details
+		{
+			top: -100px !important;
+			.col-sm-4
+			{
+				width:33.33333% !important;
+			}
+			.title
+			{
+				font-size:18px !important;
+			}
+			.content
+			{
+				font-size:18px !important;
+			}
+		}
+		.program-details-skew 
+		{
+			top: -20px !important;
+		}
+		.my-rewards
+		{
+			.name , .expires, .date
+			{
+				font-size:12px !important;
+			}
+		}
+
+	}
+}
+
+@media (min-width:$screen-xs-min) and (max-width:$screen-sm-min)  
+{
+	#MyPointsPage
+	{
+		.my-points-header
+		{
+				margin-bottom: 31px;
+		}
+		.my-points-content
+		{
+			//New UI
+			top: -56px;
+			.points-content
+			{
+				.my-points
+				{
+						margin-top: -65px;
+				}
+			}
+			.my-rewards
+			{
+					margin-top: 55px;	
+			}
+			.program-details
+			{
+				top: -100px !important;
+				font-size: 18px !important;
+				.content
+				{
+				   font-size: 18px !important;
+				}
+			}
+			.program-details-skew 
+			{
+				top: -10px !important;
+			}
+		}
+		 .my-points-toward ,.redeemable-points
+		{
+				top: 60px !important;
+		}
+		.my-points-toward-text , .redeemable-points-text
+		{
+			margin-top: 30px!important;
+		}
+		.my-rewards
+		{
+			.name , .expires, .date
+			{
+				font-size:13px !important;
+			}
+		}
+	}
+}
+@media (min-width:360px) and (max-width:$screen-xs-min)  
+{
+	#MyPointsPage
+	{
+		.my-points-content
+		{
+			.col-xs-12
+			{
+				padding-right: 15px !important;
+			}
+			.points-content
+			{				
+				.title
+				{
+					font-size: 17px;
+					width: 45% !important;
+				}
+				.my-points
+				{
+						font-size: 33px;
+						margin-top: -30px;
+						width: 48% !important;
+				}
+			}
+
+			.my-points-toward ,.redeemable-points
+			{
+				    top: 40px !important;
+			}
+			.my-rewards
+			{
+					margin-top: 25px;
+			}
+			.program-details
+			{
+				top: -100px !important;
+				font-size: 18px !important;
+				.content , .col-sm-4 .col-sm-12
+				{
+				   font-size: 14px !important;
+				}
+				.col-sm-4 .title
+				{
+					font-size: 18px !important;	
+				}
+			}
+			.program-details-skew 
+			{
+				top: -20px !important;
+			}
+			.my-rewards
+			{
+				.name , .expires, .date
+				{
+					font-size:13px !important;
+				}
+			}
+		}
+	}
+}
+@media (max-width:360px)
+{
+	#MyPointsPage
+	{
+		.my-points-content
+		{
+			.col-xs-12
+			{
+				padding-right: 15px !important;
+			}
+			.points-content
+			{				
+				.title
+				{
+					font-size: 14px;
+					width: 45% !important;
+				}
+				.my-points
+				{
+						font-size: 25px;
+						margin-top: -15px;
+						width: 48% !important;
+				}
+			}
+
+			.my-points-toward ,.redeemable-points
+			{
+				    top: 40px !important;
+			}
+			.my-rewards
+			{
+					margin-top: 25px;
+			}
+			.program-details
+			{
+				top: -100px !important;
+				font-size: 18px !important;
+				.content, .col-sm-12
+				{
+				  font-size: 14px !important;
+				}
+			}
+			.program-details-skew 
+			{
+				top: -20px !important;
+			}
+			.my-rewards
+			{
+				.name , .expires, .date
+				{
+					font-size:9px !important;
+				}
+			}
+		}
+	}
+}
+

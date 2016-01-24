@@ -1,0 +1,47 @@
+﻿#main-body #KidsClubPage , #SignUpKidsClubPage
+{
+	.kids-club-content
+	{
+		ul li{color:$mainHeadingColor;}
+		ul li p{color: black; margin: 0;}
+		span{color: $mainHeadingColor;font-weight:bold;padding-left: 24px;}
+	}
+	.sign-up-kids-club
+	{
+		text-align: center;
+		#SignUpKidsClub
+		{
+			 border-radius: 30px;
+			-moz-border-radius: 30px;
+			-webkit-border-radius: 30px;
+			-ms-border-radius: 30px;
+			background: $mainHeadingColor;
+		    text-transform: inherit;
+			padding: 5px 50px;
+		}
+	}
+
+	.kidsbaby-club-info-content
+	{
+	    table thead tr td{font-weight:bold;}
+	   .kidsbaby-item .delete-kids-baby-btn{padding-top: 8px; cursor: pointer;}
+
+	   .kidsbaby-club-footer
+	   {
+		   #SaveKidsBabyClub
+		   {
+		       padding: 4px 10px;
+			   font-size: 15px;
+			   float: right;
+		   }
+		   #AddMoreKidsBaby
+		   {
+			   background: $mainHeadingColor;
+			   text-transform: inherit;
+			   padding: 4px 10px;
+			   font-size: 15px;
+			   float: left
+		   }
+	   }
+	}
+}

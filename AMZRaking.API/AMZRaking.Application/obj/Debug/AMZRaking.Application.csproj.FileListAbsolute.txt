@@ -1,0 +1,5 @@
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Application\bin\Debug\AMZRaking.Application.dll
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Application\bin\Debug\AMZRaking.Application.pdb
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Application\obj\Debug\AMZRaking.Application.csprojResolveAssemblyReference.cache
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Application\obj\Debug\AMZRaking.Application.dll
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Application\obj\Debug\AMZRaking.Application.pdb

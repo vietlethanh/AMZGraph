@@ -1,0 +1,180 @@
+﻿#main-body {
+	#GiftCardsPage
+	{
+		.product-box-left
+		{
+			.first-card-box{
+				width: 310px;
+				border: 1px solid $borderColor;
+				.gift-card-img img{
+					width: 100px;
+					margin-top: 10px;
+				}
+				.spinner{
+					width: 85px;
+				}
+				.qty-label{
+					float: left;
+					padding-top: 8px;
+				}
+			}
+		}
+		.box-spliter{
+			border: 1px solid $borderColor;
+			height: 190px;
+			width: 0px;
+			padding: 0px;
+		}
+		.product-box-right
+		{
+			h3{
+				margin-top: 0px;
+			}
+		}
+		@media(max-width: 1199px)
+		{
+			.product-box-left, .product-box-right{
+				width: 100%;
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.box-spliter{
+				display: none;
+			}
+		}
+		@media(max-width: 330px)
+		{
+			.product-box-left{
+				.first-card-box{
+					width: 280px;
+				}
+			}
+		}
+	}
+	
+	#ViewCartPage, #GiftCardsPage{
+		.spinner.input-group .input-group-addon a.spin-up, .spinner.input-group .input-group-addon a.spin-down{
+			font-size: 12px;
+		}
+	}
+	#ViewCartPage{
+		#ViewCartView{
+			.product-detail{
+				margin: 5px 0px;
+			}
+		}
+	}
+	#OrderInfoPage{
+		#OrderInfoView{
+			#OrderForm{
+				.shipping-address-content, .shipping-address-content{
+					margin-left: 15px;
+				}
+				#PersonalMessage{
+					width: 100%;
+				}
+			}
+			.new-address-content{
+				display: none;
+			}
+			@media(max-width: 1199px)
+			{
+				.billing-info-content, .shipping-info-content{
+					width: 100%;
+				}
+				#OrderForm{	
+					.form-group{
+						.control-label{
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+	#PaymentProcessPage{
+		#PaymentProcessView{
+			.info-box{
+				min-height: 160px;
+				margin-bottom: 10px;
+			}
+			.payment-option-content{
+				.payment-img{
+					width: 240px;
+					cursor: pointer;
+				}
+			}
+			.border-right{
+				border-right: 1px solid $borderColor;
+			}
+			@media(max-width: 992px)
+			{
+				.col-sm-6{
+					width: 50%;
+				}
+			}
+			@media(max-width: 580px)
+			{
+				.payment-process-content .info-box{
+					width: 100%;
+				}
+				.border-right{
+					border-right: 0px;
+				}
+				.payment-process-content{
+					.info-box{
+						min-height: initial;
+					}
+				}
+			}
+		}
+	}
+	.top-spliter hr{
+		border-top: 1px solid $borderColor;
+	}
+}
+.login-modal{
+	width: 750px;
+	.icon-feature{
+		padding-left: 15px;
+	}
+}
+@media (min-width:$screen-md-min) {
+	.login-modal{
+		#btnLogOn {
+			margin-top: 11px;
+		}
+	}
+}
+@media (min-width:$screen-lg-min) {
+	.login-modal{
+		#btnLogOn {
+			margin-top: 60px;
+		}
+	}
+}
+@media (max-width:991px) {
+	.login-modal{
+		width: auto;
+	}
+}
+#EnterAmountForm{
+	.invalidmsg{
+		display: none;
+		color: $messageColor;
+	}
+	#txtUnitPrice{
+		margin: 0px auto; width: 50%;
+	}
+}
+@media (min-width:1200px) {
+	.login-modal{
+		#LogOnView{
+			form{
+				.control-label{
+					padding-left: 0px; padding-right: 0px; text-align: right;
+				}
+			}
+		}
+	}
+}

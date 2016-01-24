@@ -1,0 +1,426 @@
+﻿#main-body{
+	#LogOnView
+	{
+		.messages-multi{
+			margin-left: 5px;
+			color: $messageColor;
+		}
+		@media (min-width:$screen-md-min) {
+			#btnLogOn {
+				margin-top: 20px;
+			}
+		}
+		@media (min-width:$screen-lg-min) {
+			#btnLogOn {
+				margin-top: 72px;
+			}
+		}
+		@media (max-width: 1199px)
+		{
+			#LogonForm{
+				.col-sm-4{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.step-active
+	{
+		color : $stepActiveColor !important;
+	}
+	.step-active-background
+	{
+		background-color : $stepActiveColor !important;
+	}
+	.account-create-steps {
+		margin-top: 20px;
+		ul {
+			padding: 5px;
+			li {
+				list-style: none; 
+				height: 60px;
+				line-height: 16px;
+				font-size: 16px;
+
+				span.label {
+					font-size: 16px;
+					display: block;
+					float: left;
+					margin-right: 8px;
+					padding: 10px 15px;
+				}
+			}
+			
+		}
+		@media (min-width:$screen-md-min) {
+			ul {
+				li {
+					line-height: 16px;
+					font-size: 17px;
+					
+					span.label {
+						font-size: 17px;
+						padding: 8px 12px;
+					}
+				}
+			}
+		}
+		@media (min-width:$screen-lg-min) {
+			ul {
+				li {
+					line-height: 20px;
+					font-size: 20px;
+					span.label {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+	.account-create-steps.panel-primary {
+		border-color: $accountCreateSteps;
+		background-color: $accountCreateSteps;
+		color: $accountCreateColor;
+
+		> .panel-heading {
+			background-color: $accountCreatePanelBg;
+			border-color: $accountCreatePanelBg;
+		}
+		> .panel-body{
+			padding: 7px 0px 0px 7px;
+		}
+	}
+	#ShopperInfoForm , #ChangeStoreView
+	{
+	  .arrow-tip-select-store, .arrow-tip-zip-code, .arrow-tip-button-find
+	  {
+		 background: url(images/arrow-tip-icon.png) no-repeat top center;
+		 width: 10px;
+		 height: 19px;
+		 margin-left: -10px;
+		 vertical-align: middle;
+	  }
+	   .arrow-tip-select-store
+	   {
+	     margin-top: 30px;
+	   }
+	   .arrow-tip-zip-code
+	   {
+		 margin-top: 8px;
+	   }
+	   .arrow-tip-button-find
+	   {
+			margin-top: 25px;
+	   }
+	  .content-tip-zip-code , .content-tip-select-store, .content-tip-button-find
+	  {
+		 border-left: 1px solid #ddd;
+		 vertical-align: middle;
+		 font-size: 11px;
+		 font-family: "Calibri-Normal";
+		 padding-left: 12px;
+		 height: 47px;
+	  }
+	  .content-tip-button-find
+	  {
+		padding-top: 12px;
+	  }
+	  .content-tip-select-store
+	  {
+		padding-top: 12px;
+	  }
+	  .sl-your-store-lb
+	  {
+		text-align: left;
+		
+	  }
+	  #btnFindStore
+	  {
+		float: right;
+		margin-bottom:15px;
+	  }
+	}
+	#CommunicationView{
+		#CommunicationsForm{
+			.text-message{
+				color: $messageColor; 
+			}
+		}
+	}
+	#ChangeCommunicationsView{
+		#ChangeCommunicationsForm{
+			.text-message{
+				color: $messageColor;
+			}
+		}
+	}
+	#AccountSummaryView{
+		.physical-card-request-link{
+			color: $cardRequestLink; font-size: 10px; font-weight: bold;
+			cursor: pointer;
+		}
+	}
+	#ConfirmInfoView{
+		.confirm-tip{
+			margin-bottom: 10px;
+		}
+		.control-label{
+			padding-top: 0px;
+		}
+	}
+	.hight-light{
+		background: $hightLight;
+	}
+	.more-padding
+	{
+		padding: 10px 0px;
+	}
+	#ChangeStoreView, #ShopperInfoForm{
+		@media (max-width:767px) {
+			#ChangeStoreForm, #ShopperInfoForm{
+				#btnFindStore{
+					margin-top: 10px;
+				}
+			}			
+		}
+	}
+	#ChangeInterestClubView, #InterestClubView{
+		@media (max-width:470px) {
+			.col-xs-6{
+				width: 100%;
+			}
+		}
+	}
+	@media (max-width:1199px) {
+		.list-step{
+			display: none;
+		}
+		.input-content{
+			width: 100%;
+		}
+	}
+	@media (max-width: 1199px), (max-width: 992px), (max-width: 768px)
+	{
+		#ContactInfoView, #LogInInfoView, #CommunicationView,
+		#ChangeSmartRewardView, #ChangeCommunicationsView
+		{
+			.col-sm-4 {
+				width: 33.33333%;
+			}
+			.col-sm-6{
+				width: 50%;
+			}
+		}
+	}
+	@media (max-width: 498px)
+	{
+		#CommunicationView #CommunicationsForm, #ChangeCommunicationsView #ChangeCommunicationsForm{
+			.control-label{
+				width: 100%;			
+			}
+		}
+	}
+	@media (max-width: 453px)
+	{
+		br.full-text2{
+			display: none;
+		}
+		span.full-text2{
+			width: 100%; display: block;
+		}
+	}
+	@media (max-width: 418px)
+	{
+		br.full-text{
+			display: none;
+		}
+		span.full-text{
+			width: 100%; display: block;
+		}
+	}
+	
+	#ChangeInterestClubView
+	{
+		#lblLinkToChangeCommunication
+		{
+		  cursor: pointer;
+		  color: #2fc6e9;
+		  text-decoration: underline;
+		}
+		p
+		{
+			font-weight: bold;
+		}
+	  #HealthWellnessChangeInterest, #KidsBabyClubChangeInterest, #PetClubChangeInterest, #WineBeerClubChangeInterest,#BirthdaySurpriseChangeInterest,#RxClubChangeInterest
+	  {
+		border: 1px solid $borderColor;
+		min-height: 115px;
+		padding: 20px 10px;
+		display: inline-block;
+		width: 100%;
+		border-radius: 12px; 
+		-moz-border-radius: 12px; 
+		-webkit-border-radius: 12px; 
+		-ms-border-radius: 12px;
+	  }
+
+	  #RxClubChangeInterest
+	  {
+		span strong{font-size: 14px;}
+		label strong{font-weight: bold;}
+		p{margin: 0;font-weight: normal;}
+		.rx-data
+		{
+			label:first-child{font-weight: bold;}
+			label.required{float:right;}
+			label
+			{    
+				display: inline;
+				position: relative;
+				top: -2px;
+				font-weight: normal;
+			}
+		}
+
+		.rx-data-paid-page
+		{
+			p
+			{
+				text-align: center;    
+				font-size: 18px;     
+				font-weight: 600;
+				strong
+				{
+					font-weight: 900;
+					font-size: 23px;
+				}
+			}
+		}
+		.rx-data-joined-Page
+		{
+			p
+			{
+				color: red;
+			}
+		}	
+	  }
+
+
+	  #KidsBabyClubChangeInterest
+	  {
+	    .new-kidsbaby-item .delete-kids-baby-btn{padding-top: 8px; cursor: pointer;}
+		.kidsbaby-change-interest-footer
+		{
+			text-align: left;
+
+			#AddMoreKidsBabyClub
+			{
+			   background: $mainHeadingColor;
+			   text-transform: inherit;
+			   padding: 4px 10px;
+			   font-size: 15px;
+			   float: right;
+			}
+		}
+	  }
+
+	   #PetClubChangeInterest
+	  {
+	    .new-pet-item .delete-pet-btn{padding-top: 8px; cursor: pointer;}
+		.petclub-change-interest-footer
+		{
+			#AddMorePetClub
+			{
+			   background: $mainHeadingColor;
+			   text-transform: inherit;
+			   padding: 4px 10px;
+			   font-size: 15px;
+			   float: right;
+			}
+		}
+	  }
+	}
+
+	#InterestClubView
+	{
+		#lblLinkToCommunication
+		{
+		  cursor: pointer;
+		  color: #2fc6e9;
+		  text-decoration: underline;
+		}
+		p
+		{
+			font-weight: bold;
+		}
+	  #HealthWellnessInterest, #KidsBabyClubInterest, #PetClubInterest, #WineBeerClubInterest,#BirthdaySurpriseInterest,#RxClubInterest
+	  {
+		border: 1px solid $borderColor;
+		min-height: 115px;
+		padding: 20px 10px;
+		display: inline-block;
+		width: 100%;
+		border-radius: 12px; 
+		-moz-border-radius: 12px; 
+		-webkit-border-radius: 12px; 
+		-ms-border-radius: 12px;
+	  }
+
+	  #RxClubInterest
+	  {
+		span strong{font-size: 14px;}
+		label strong{font-weight: bold;}
+		p{margin: 0;font-weight: normal;}
+		.rx-data
+		{
+			label:first-child{font-weight: bold;}
+			label.required{float:right;}
+			label
+			{    
+				display: inline;
+				position: relative;
+				top: -2px;
+				font-weight: normal;
+			}
+		}
+	  }
+
+	  #KidsBabyClubInterest
+	  {
+	     table tr.new-kidsbaby-item td{padding: 5px;}
+		.new-kidsbaby-item .delete-kids-baby-btn{padding-top: 8px; cursor: pointer;}
+		.kidsbaby-interest-footer
+		{
+			text-align: left;
+
+			#AddMoreKidsBabyClubInterest
+			{
+			   background: $mainHeadingColor;
+			   text-transform: inherit;
+			   padding: 4px 10px;
+			   font-size: 15px;
+			   float: right;
+			}
+		}
+	  }
+
+	  #PetClubInterest
+	  {
+	    table tr.new-pet-item td{padding: 5px; width:22%;}
+		table tr.new-pet-item td:nth-child(2){width:30%;}
+		table tr.new-pet-item td:last-child{width:4%;}
+		.new-pet-item .delete-pet-btn{padding-top: 8px; cursor: pointer;}
+		.petclub-interest-footer
+		{
+			#AddMorePetClubInterest
+			{
+			   background: $mainHeadingColor;
+			   text-transform: inherit;
+			   padding: 4px 10px;
+			   font-size: 15px;
+			   float: right;
+			}
+		}
+	  }
+	}
+}

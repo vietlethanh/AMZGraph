@@ -1,0 +1,673 @@
+﻿#SaveMorePage {
+	#DigitalCouponsContent
+	{
+		.coffee-rewards-box
+		{
+			background-color: $coffeeRewardsBoxBg;
+			.title
+			{
+				  width: 100%;
+				  span.text-label
+				  {
+					line-height: 0px;
+					padding-right: 0px;
+					padding-top: 10px;
+					float: none;
+				  }
+			}
+			p
+			{
+				margin: 10px 0px;
+			}
+			.rewards-link
+			{
+				font-family: arial;
+				font-size: 9px;
+				color: $mainMenuSubNavFontColor;
+				text-decoration: none;
+				@media (min-width:0px) and (max-width:$screen-sm-max)
+				{
+					font-size: 8px;
+				}	
+			}
+		}
+		#CoffeeRewards
+		{
+			.note-message
+			{
+				 padding: 10px 0px;
+				 font-weight: bold;
+			}
+			.text
+			{
+				span
+				{
+					 color: $CoffeeRewardsTextSpan;
+					 display: inline-block;
+					 font-size: 18px;
+					 font-weight: bold;
+					 margin: 0 4px 8px;
+				}
+				.coffee-icon
+				{
+					width: 25px;
+				}
+				 .more-link
+				 {
+					text-decoration: none;
+					img
+					{
+						width: 30px;
+					}
+				 }
+			 }
+		}
+		
+		margin-top: 20px;
+		.digital-coupons-box-mobile
+		{
+			background-color: $digitalCouponsBoxBg;
+			.title span.text-label
+			{
+				  line-height: 20px;
+				  padding-top: 0px;
+					@media (min-width:0px) and (max-width:$screen-sm-max)
+					{
+						font-size: 19px;
+					}	
+			}
+			.title
+			{
+				@media (min-width:0px) and (max-width:$screen-sm-max)
+				{
+					width: 48%;
+				}
+			}
+		}
+		.digital-coupon-content
+		{	
+			.coupons-content{
+				min-height: 275px;
+				.table-striped{
+					display: block;
+					.header-tb{
+						display: table; width: 100%; border: 0;
+						>tr >td{
+							width: 70%;
+						}
+						>tr , >tr >td
+						{
+							background-color: $digitalCouponsheaderBg !important;
+							color: $digitalCouponsBoxBg;
+						}						
+					}
+					.content-tb{
+						display: inline-block; height: 282px; overflow-y: scroll;overflow-x: hidden; width: 100%; border: 0;
+						>tr >td{
+							width: 70%;
+						}
+						>tr , >tr >td
+						{
+							background-color: inherit !important;
+							border: 0px;
+						}
+						>tr >td:first-child
+						{
+							padding:8px 0px 8px 15px;				
+						}
+						 >tr >td:last-child
+						{
+							padding:8px 5px 8px 0px;				
+						}
+						 @media (max-width:$screen-sm-max)
+						{
+							height: 310px
+						}
+					}
+				}
+			}
+			.digital-coupons-box-header
+			{
+				background-color: $digitalCouponsBoxBg;
+				border-top-left-radius: 12px; -moz-border-radius-topleft: 12px; -webkit-border-top-left-radius: 12px; -ms-border-top-left-radius: 12px;
+				border-top-right-radius: 12px; -moz-border-radius-topright: 12px; -webkit-border-top-right-radius: 12px; -ms-border-top-right-radius: 12px;
+				color: $mainMenuSubNavFontColor;
+				.title
+				{
+					font-size: 22px;
+					font-weight: bold;
+					float: left;
+					width: 42%;
+					line-height: 100%;
+					padding-top: 10px;
+					span.text-label 
+					{
+						display: block;
+						text-align: left;
+						line-height: 22px;
+						padding-top: 10px;
+						float: left;
+						padding-bottom: 12px;
+					}
+					@media (max-width:$screen-xs-max) 
+					{
+						font-size: 17px;
+						padding-top: 3px;
+					}
+					@media (max-width:$screen-sm-max) 
+					{
+						font-size: 17px;
+						padding-top: 3px;
+					}
+					
+				}
+				.points
+				{
+					font-size: 16px;
+					font-weight: bold;
+					float: right;
+					padding-top: 7px;
+					span.count-label 
+					{	
+						border-left: 2px solid $countLabelBorder;
+						font-size: 40px;
+						line-height: 58px;
+						display: inline-block;
+						padding-left: 5px;
+						@media (min-width:0px) and (max-width:$screen-sm-max)
+						{
+							font-size: 29px;
+							border-left: 0px;
+						}	
+					}
+					span.text-label 
+					{
+						display: block;
+						text-align: left;
+						line-height: 22px;
+						padding-right: 5px;
+						padding-top: 5px;
+						float: left;
+					}
+				}
+			}
+		}
+		.hide-row {
+			display: none;
+		}
+		.digital-coupons-box-footer
+		{
+			cursor: pointer;
+			background-color: $digitalCouponsBoxBg;
+			height:50px;
+			color: $mainMenuSubNavFontColor;
+			padding: 10px 20px;
+			border-bottom-left-radius: 12px; -moz-border-radius-bottomleft: 12px; -webkit-border-bottom-left-radius: 12px; -ms-border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px; -moz-border-radius-bottomright: 12px; -webkit-border-bottom-right-radius: 12px; -ms-border-bottom-right-radius: 12px;
+			.pull-right 
+			{
+				font-size: 18px;
+				@media (max-width:$screen-sm-max)  
+				{
+					font-size: 15px;
+				}
+				font-weight: bold;
+				span.text-label 
+				{
+					display: block;
+					text-align: right;
+					line-height: 20px;
+					float: left;
+					padding-top: 5px;
+				}	
+			}
+		}
+		
+		.coupons-content 
+		{			
+			.label-save 
+			{
+				font-size: 14px;
+			}
+			.table td.header
+			{
+				padding:5px 15px;
+			}
+		}
+		.coupons-content.scroll 
+		{
+			height: 428px;
+			overflow-y: auto;
+			display: inline-block;
+		}
+	}
+	/* #BoxContentMobile
+	{
+		margin-top: 10px;
+		.rx-club-box 
+		{
+			background-color: $rxClubBox;
+			img
+			{
+				width:95%;
+				height: auto;
+				@media (max-width:$screen-sm-max) 
+				{
+					width:100%;
+					height: auto;
+				}
+			}
+		}
+		.kids-club-box
+		{
+			background-color: $kidsClubBoxBg;
+			img
+			{
+				width:30%;
+				height: auto;
+				@media (max-width:$screen-sm-max) 
+				{
+					width:55%;
+					height: auto;
+				}
+			}
+			.title
+			{
+				padding-top: 12px;
+				@media (max-width:$screen-sm-max) 
+				{
+					padding-top: 8px;
+				}
+				span.text-label 
+				{
+					  display: inline-block;
+					  text-align: left;
+					  line-height: 25px;
+					  padding-right: 0px;
+					  padding-top: 0px;
+					  float: none;
+					  vertical-align: middle;
+
+				}
+			}
+		}
+		.my-points-box
+		{
+			background-color: $myPointsBox;
+			.more-info
+			{
+				line-height: 0px;
+			}
+		}
+	
+		.coffee-rewards-box
+		{
+			background-color: $coffeeRewardsBoxBg;
+			margin-bottom: 0px;
+			border-top-left-radius: 12px; -moz-border-radius-topleft: 12px; -webkit-border-top-left-radius: 12px; -ms-border-top-left-radius: 12px;
+			border-top-right-radius: 12px; -moz-border-radius-topright: 12px; -webkit-border-top-right-radius: 12px; -ms-border-top-right-radius: 12px;
+			.header
+			{
+				color: $mainMenuSubNavFontColor;
+				span.text-label 
+				{
+					  display: block;
+					  text-align: left;
+					  line-height: 20px;
+					  padding: 20px;
+					  float: left;
+					  font-size: 25px;
+				}
+			}
+			
+		}
+
+		.coffee-rewards-box-content 
+		{
+			padding-bottom: 10px;
+			border-radius: 0 0 6px 6px;
+			-moz-border-radius: 0 0 6px 6px;
+			-webkit-border-radius: 0 0 6px 6px;
+			-ms-border-radius: 0 0 6px 6px;
+		}
+		.coffee-rewards-box-footer
+		{
+			background: $coffeeRewardsBoxBg; 
+			height: 40px;
+			text-align: center;
+			margin-bottom: 15px;
+			color: $mainMenuSubNavFontColor;
+			border-bottom-left-radius: 12px; -moz-border-radius-bottomleft: 12px; -webkit-border-bottom-left-radius: 12px; -ms-border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px; -moz-border-radius-bottomright: 12px; -webkit-border-bottom-right-radius: 12px; -ms-border-bottom-right-radius: 12px;
+			.rewards-link
+			{
+				font-family: arial;
+				font-size: 12px;
+				color: $mainMenuSubNavFontColor;
+				text-decoration: none;
+			}
+		}
+		.lodge-box
+		{
+			background-color: $lodgeBoxBg;
+			img
+			{
+				width:85%;
+				height: auto;
+				@media (max-width:$screen-sm-max) 
+				{
+					width:100%;
+					height: auto;
+				}
+			}
+			.title
+			{
+				font-size: 12px;
+				padding: 0;
+				@media (max-width:$screen-sm-max) 
+				{
+					padding: 5px 0px 0px 0px;
+				}
+			}
+			.points
+			{
+				width: 25%;
+				float: right;
+				margin-top: 10px;
+				border-left: 1px solid white;
+				@media (max-width:$screen-sm-max) 
+				{
+					margin-top: 20px;
+					span.count-label 
+					{
+						font-size: 32px;
+					}
+				}				
+			}
+			.points-title
+			{
+				width: 16%;
+				float: right;
+				padding-top: 20px;
+				@media (max-width:$screen-sm-max) 
+				{
+					width: 25%;
+				}
+			}
+		}
+		
+
+		#CoffeeRewards
+		{
+			.note-message
+			{
+				 padding: 10px 0px;
+				 background-color: $coffeeRewardsBoxFooterBg;
+				 font-weight: bold;
+			}
+			.text
+			{
+				span
+				{
+					 color: $CoffeeRewardsTextSpan;
+					 display: inline-block;
+					 font-size: 18px;
+					 font-weight: bold;
+					 margin: 0 4px 8px;
+				}
+				.coffee-icon
+				{
+					width: 45px;
+				}
+				 .more-link
+				 {
+					text-decoration: none;
+					img
+					{
+						width: 30px;
+					}
+				 }
+			 }
+		}
+	} */
+
+	#BoxContent
+	{
+		.my-points-box
+		{
+			background-color: $myPointsBox;
+			.title
+			{
+				width: 48%;
+			}	
+			.title span.text-label
+			{
+				  line-height: 20px;
+				  padding-top: 0px;
+				  @media (min-width:0px) and (max-width:$screen-sm-max)
+				  {
+					 font-size: 19px;
+				  }	
+			}
+		}
+
+		.rx-club-box
+		{
+			background-color: $rxClubBox;
+			img
+			{
+				width: auto;
+				height: 40px;
+			}
+		}
+		.kids-club-box
+		{
+			background-color: $kidsClubBoxBg;
+			img
+			{
+					width: auto;
+					height: 83px;
+					padding-top: 4px;
+					float: left;
+					padding-left: 5px;
+			}
+			.title
+			{
+				padding-top: 0px;
+				width: 70%;
+			}
+			.title span.text-label
+			{
+			  line-height: 20px;
+			  padding-top: 30px;
+			  @media (min-width:0px) and (max-width:$screen-sm-max)
+			  {
+				 font-size: 19px;
+			  }	
+			}	
+		}
+		.pet-club-box
+		{
+			background-color: $petClubBox;
+			.title
+			{
+				padding-top: 0px;
+				width: 70%;
+			}
+			.title span.text-label
+			{
+				  line-height: 20px;
+				  padding-top: 30px;
+				  @media (min-width:0px) and (max-width:$screen-sm-max)
+				  {
+					 font-size: 19px;
+				  }	
+			}
+		}
+
+		.wine-beer-club-box
+		{
+			background-color: $wineAndBeerClubBox;
+			.title
+			{
+				padding-top: 0px;
+				width: 70%;
+			}
+			.title span.text-label
+			{
+				  line-height: 20px;
+				  padding-top: 30px;
+				  @media (min-width:0px) and (max-width:$screen-sm-max)
+				  {
+					 font-size: 19px;
+				  }	
+			}
+		}
+
+		.birthday-club-box
+		{
+			background-color: $birthdaySurpriseBox;
+			.title
+			{
+				padding-top: 0px;
+				width: 70%;
+			}
+			.title span.text-label
+			{
+				  line-height: 20px;
+				  padding-top: 30px;
+				  @media (min-width:0px) and (max-width:$screen-sm-max)
+				  {
+					 font-size: 19px;
+				  }	
+			}
+		}
+	}
+	/* .box-view-mobile
+	{
+		border-radius: 12px;
+		-moz-border-radius: 12px;
+		-webkit-border-radius: 12px; 
+		-ms-border-radius: 12px;
+		margin-bottom: 20px;
+		color: $mainMenuSubNavFontColor;
+		position: relative;
+		padding-right: 0px;
+		height: 85px;
+		.title
+		{
+			font-size: 22px;
+			font-weight: bold;
+			float: left;
+			width: 50%;
+			padding: 15px 0px;
+			span.text-label 
+			{
+				display: block;
+				text-align: left;
+				float: left;
+			}
+		}
+		.points
+		{
+			font-size: 16px;
+			font-weight: bold;
+			text-align: right;
+		    padding-right: 5px;
+			span.count-label 
+			{
+				font-size: 45px;
+				display: inline-block;
+			}
+		}
+		.more-info
+		{
+			float: right;
+			line-height: 130px;		
+			span
+			{
+				a{ color: white; font-size: 16px; text-decoration: none; font-family: arial;margin: 5px;}
+			}
+		}
+	} */
+	.box-view
+	{
+		border-radius: 12px;
+		-moz-border-radius: 12px;
+		-webkit-border-radius: 12px; 
+		-ms-border-radius: 12px;
+		margin-top: 20px;
+		color: $mainMenuSubNavFontColor;
+		position: relative;
+		height: 85px;
+		padding-right: 0px;
+		.title
+		{
+			font-size: 22px;
+			font-weight: bold;
+			float: left;
+			width: 50%;
+			line-height: 100%;
+			padding-top: 20px;
+			span.text-label 
+			{
+				display: block;
+				text-align: left;
+				line-height: 60px;
+				padding-right: 15px;
+				padding-top: 10px;
+				float: left;
+				@media (max-width:$screen-sm-max) 
+				{
+					padding-right: 0px;
+				}
+
+			}
+		}
+		.points
+		{
+			font-size: 16px;
+			font-weight: bold;
+			float: right;
+			padding-right:15px;
+			padding-top: 7px;
+			span.count-label 
+			{
+				font-size: 40px;
+				line-height: 70px;
+				display: inline-block;
+				@media (min-width:0px) and (max-width:$screen-sm-max)
+				{
+					font-size: 29px;
+					margin-right: -10px;
+				}	
+			}
+		}
+		.more-info
+		{
+			height: 100%;
+			width: 33px;
+			background-color: rgba(0,0,0,0.4);
+			float: right;
+			margin: 0;					  
+			border-top-right-radius: 12px; -moz-border-radius-topright: 12px; -webkit-border-top-right-radius: 12px; -ms-border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px; -moz-border-radius-bottomright: 12px; -webkit-border-bottom-right-radius: 12px; -ms-border-bottom-right-radius: 12px;
+			span
+			{
+				transform-origin: 0 0;
+				-ms-transform-origin: 0 0;
+				-webkit-transform-origin: 0 0;
+				-moz-transform-origin: 0 0;
+				-o-transform-origin: 0 0;
+				white-space: nowrap;
+				-webkit-transform: translate(5px,80px) rotate(-90deg);
+				-moz-transform: translate(5px,80px) rotate(-90deg);
+				-ms-transform: translate(5px,80px) rotate(-90deg);
+				-o-transform: translate(5px,80px) rotate(-90deg);	
+				transform: translate(5px,80px) rotate(-90deg);
+				display: inline-block;
+				a{ color: white; font-size: 16px; text-decoration: none; font-family: arial;margin: 4px;}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.icon {
+	width: 30px;
+	height: 30px;
+	/*background-size: 100%;*/
+	background-repeat: no-repeat;
+	display: inline-block;
+	cursor: pointer;
+	&.sendmail {
+		background-image: url("./images/icon-email.png");
+	}
+	&.print {
+		background-image: url("./images/icon-print.png");
+	}
+	&.pdf {
+		background-image: url("./images/icon-pdf.png");
+	}
+	&.next-btn {
+		background-image: url("./images/next_but.jpg");
+		background-size: 100%;
+	}
+	&.prev-btn {
+		background-image: url("./images/prev_but.jpg");
+		background-size: 100%;
+	}
+}

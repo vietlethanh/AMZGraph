@@ -1,0 +1,5 @@
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient.Test\bin\Debug\AMZRaking.API.ServiceClient.Test.dll
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient.Test\bin\Debug\AMZRaking.API.ServiceClient.Test.pdb
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.csprojResolveAssemblyReference.cache
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.dll
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.pdb

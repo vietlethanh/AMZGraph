@@ -1,0 +1,213 @@
+// Common
+// -------------------------------
+$mainFontColor: #535353;
+$mainBodyFont: "Lato", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bodyBackground: none;
+$bodyBoxShadow: none;
+$headerAuxBackground: #00a6e0;
+$bodyContentBackground: #ffffff;
+$bodySubContentBackground: #ffffff;
+$logoImage: url(../Content/Images/AlbMarket-Logo.png) no-repeat;
+$bodyContentWidth: 1170px !important;
+$topMenuFontFamily: "Cabin", Gotham, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mainMenuTextColor: #ffffff;
+$mainMenuHoverColor: #00a6e0;
+$mainMenuBackgroundColor: #005ca6;
+$mainHeadingColor: #005ca6;
+$subHeadingColor: #94a545;
+$mainMenuBorder: 1px solid #ffffff;
+$mainMenuFontFamily: "Lato", "Cabin", Gotham, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mainMenuSubNavBackground: #00a6e0;
+$mainMenuSubNavFontFamily: "Cabin", Gotham, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mainMenuSubNavFontColor: #fff;
+$sideMenuFontFamily: "Cabin", Gotham, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mobileSideBarMenuBackground: #363636;
+$mobileSideBarMenuBorder: #2b2b2b;
+$mobileSideBarSprtBorder: #999999;
+$footerBackground: none;
+$footerHeadingFontFamily: "Oswald", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headingFontFamily: "Oswald", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$logonBoxBorderColor: #dddddd;
+$largePadding: 0 30px;
+$accountCreateStepsBoxBg: #f8981d;
+$accountCreateStepsBoxHeaderBg: #f26649;
+$recipeTopBanner: url(../Content/Images/banner-rs-recipe1.jpg) no-repeat top center;
+$recipeBoxTopBanner: url(../Content/Images/banner-rs-myrecipes.jpg) no-repeat top center;
+$mealPlansTopBanner: url(../Content/Images/banner-rs-mealplans.jpg) no-repeat top center;
+$nuarticleTopBanner: url(../Content/Images/banner-rs-mealplans.jpg) no-repeat top center;
+$colorPrimary: #035ea6;
+$borderColor: #dddddd;
+$storeLocatorBoxBg: #94a545;
+$weeklyAdContainerBg: #f3f0e6;
+$weeklyAdActivePageBg: #f22e55;
+$digitalCouponPageBg: #f3f0e6;
+$digitalCouponHeaderBg: #f8981d;
+$invertHeaderBg: #f26649;
+
+$ViewFullFlyerBtnHoverBg: #1ba7de;
+$buttonHoverColor: #0c5ea4;
+$storeLocatorBoxBg: $ViewFullFlyerBtnHoverBg;
+$btnSearchStoreHoverBg: $buttonHoverColor;
+// RS
+// -------------------------------
+// Account
+// -------------------------------
+$messageColor: #ff1026;
+$hightLight: #eeeeee;
+$accountCreateSteps: $accountCreateStepsBoxBg;
+$accountCreateColor: $mainMenuSubNavFontColor;
+$accountCreatePanelBg: $accountCreateStepsBoxHeaderBg;
+$cardRequestLink: #ddd;
+$stepActiveColor: black;
+// Catering
+// -------------------------------
+$panelHeaderBarBg: #f18903;
+$viewCartHeaderBg: #e9e2cd;
+$paymentProcessHeaderBg: #e9e3ce;
+$cateringCatBorder: #666666;
+
+// Coupons
+// -------------------------------
+$borderDashedBg: #000;
+$IntroCouponHeader: #f86629;
+
+
+// Digital Coupons
+// -------------------------------
+$digitalCouponsBoxBg: #19aeb4;
+$couponsTabletTHeadBg: #9de3e6;
+$coffeeRewardsBoxBg: #814634;
+$coffeeRewardsBoxFooterBg: #f2efef;
+$lodgeBoxBg: #a3ce4a;
+$CoffeeRewardsTextSpan: #6b3628;
+$digitalCouponsheaderBg: #e9e3ce;
+// Kids club
+// -------------------------------
+$rxClubBox: #ed2227;
+$kidsClubBoxBg: #ec9f37;
+$myPointsBox: #1B75BC;
+$petClubBox:#855fa8;
+$wineAndBeerClubBox:#696a6c;
+$birthdaySurpriseBox:#95ca3c;
+$rxClubTextColor: #00a6e0; 
+// Rewards program
+// -------------------------------
+$countLabelBorder: #cbff99;
+$rewardsLinkBorder: #7f8f94;
+$rightContentBg: #e9e5cf;
+
+// Weekly Ad
+// -------------------------------
+$btnDefaultBorder: #080808;
+$actionColor: #696969;
+$sectionBorder: #e84a36;
+$addressColor: black;
+
+// Base
+// -------------------------------
+$markBg: #ff0;
+$bodyColor: #565656;
+$controlNav: #CCC;
+$popoverTitleBg: #f7f7f7;
+$popoverTitleBorder: #ebebeb;
+$blockQuoteColor: #aaa;
+$carouselBg: #899cbc;
+$outputColor: #555;
+$preBg: #f5f5f5;
+$wellBorder: #e3e3e3;
+$modalHeaderBorder: #e5e5e5;
+$navColor: #777;
+$fieldSetBorder: #c0c0c0;
+$hColor: #303030;
+$warningBg: #fcf8e3;
+$warningHoverBg: #f7ecb5;
+$alertWarningBorder: #faebcc;
+$textPrimary: #010a14;
+$textSuccess: #3c763d;
+$textSuccessHover: #2b542c;
+$textInfo: #31708f;
+$textInfoHover: #245269;
+$textWarning: #8a6d3b;
+$textWarningHover: #66512c;
+$textDanger: #a94442;
+$textDangerHover: #843534;
+$successBg: #dff0d8;
+$successHoverBg: #c1e2b3;
+$infoBg: #d9edf7;
+$infoHoverBg: #afd9ee;
+$dangerBg: #f2dede;
+$dangerHoverBg: #e4b9b9;
+$codeColor: #c7254e;
+$codeBg: #f9f2f4;
+$tableTrOddBg: #f9f9f9;
+$tableTrActiveHoverBg: #e8e8e8;
+$tableTrSuccessHoverBg: #d0e9c6;
+$tableTrInfoHoverBg: #c4e3f3;
+$tableTrWarningHoverBg: #faf2cc;
+$tableTrDangerHoverBg: #faf2cc;
+$formControlFocusBorder: #66afe9;
+$formSuccessControlFocusShadow: #67b168;
+$formWarningControlFocusShadow: #c0a16b;
+$formErrorControlFocusShadow: #ce8483;
+$formSuccessControlBorder: #468847;
+$formWarningControlBorder: #c09853;
+$formErrorControlBorder: #b94a48;
+$helpBlock: #969696;
+$btnDefaultBg: #392e2c;
+$btnDefaultActiveBorder: #262626;
+$dropdownToggleBtnDefaultBg: #1a1a1a;
+$dropdownToggleBtnDefaultBorder: #080808;
+$btnPrimaryBorder: #01172d;
+$btnSuccessBg: #5cb85c;
+$btnSuccessHoverBg: #449d44;
+$btnSuccessHoverBorder: #398439;
+$btnSuccessBorder: #4cae4c;
+$btnInfoBg: #5bc0de;
+$btnInfoBorder: #46b8da;
+$btnInfoHoverBg: #31b0d5;
+$btnInfoHoverBorder: #269abc;
+$btnWarningBg: #f0ad4e;
+$btnWarningBorder: #eea236;
+$btnWarningHoverBg: #ec971f;
+$btnWarningHoverBorder: #d58512;
+$btnDangerBg: #d9534f;
+$btnDangerHoverBg: #c9302c;
+$btnDangerBorder: #d43f3a;
+$btnDangerHoverBorder: #ac2925;
+$navbarDefaultBg: #f8f8f8;
+$navbarDefaultBorder: #e7e7e7;
+$navbarDefault: #5e5e5e;
+$navbarDefaultBg: #888;
+$navbarInverse: #9d9d9d;
+$navbarInverseBg: #222;
+$navbarInverseBorder: #101010;
+$navbarInverseFocus: #444;
+$jumbotronHrBorder: #d5d5d5;
+$alertSuccessBorder: #d6e9c6;
+$alertSuccessHrBorder: #c9e2b3;
+$alertInfoBorder: #bce8f1;
+$alertInfoHrBorder: #a6e1ec;
+$alertWarningHrBorder: #f7e1b5;
+$alertDangerBorder: #ebccd1;
+$alertDangerHrBorder: #e4b9c0;
+$listGroupItemText: #1c87f9;
+$mainWrapperSideBarBg: #f8f7f5;
+$modalContentBorder: #fcfcfc;
+$tableTrNthChildOdd: #F2EFEF;
+$coTmBg: #fcbd54;
+$menuVAccordionBorder: #edebe6;
+$menuVAccordion: $cateringCatBorder;
+$messageInfo: #062232;
+$messageInfoBg: #e6f1c9;
+$messageInfoBorder: #cfe493;
+$messageWarningBg: #fdf5bc;
+$messageWarningBorder: #ffea9b;
+$criticalMessageBg: #e68585;
+$criticalMessageBorder: #990808;
+$linkSupporterA: #484848;
+$labelError: red;
+$iconCouponB: #36abd1;
+$iconEnvelopeB: $storeLocatorBoxBg;
+$iconThumbsupB: #ff66cc;
+$iconTextB: #9933cc;
+$iconShoppinglistB: #f18903;

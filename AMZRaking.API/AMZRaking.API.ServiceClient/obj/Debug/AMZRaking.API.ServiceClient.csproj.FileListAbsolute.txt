@@ -1,0 +1,5 @@
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient\bin\Debug\AMZRaking.API.ServiceClient.dll
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient\bin\Debug\AMZRaking.API.ServiceClient.pdb
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient\obj\Debug\AMZRaking.API.ServiceClient.dll
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient\obj\Debug\AMZRaking.API.ServiceClient.pdb
+D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.API.ServiceClient\obj\Debug\AMZRaking.API.ServiceClient.csprojResolveAssemblyReference.cache

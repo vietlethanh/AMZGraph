@@ -1,0 +1,5 @@
+D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\bin\Debug\AMZRaking.Common.dll
+D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\bin\Debug\AMZRaking.Common.pdb
+D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.csprojResolveAssemblyReference.cache
+D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.dll
+D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.pdb

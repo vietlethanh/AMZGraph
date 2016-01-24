@@ -1,0 +1,7 @@
+form{
+	.required-field {
+		label:before {
+			content : '* ';
+		}
+	}
+}

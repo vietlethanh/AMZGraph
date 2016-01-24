@@ -1,0 +1,38 @@
+#main-body #BirthdaySurprisePage, #SignUpBirthdaySurprisePage
+{
+	.birthday-surprise-content
+	{
+
+	}
+	.birthday-info-content
+	{
+	   table thead tr td{font-weight:bold;}
+
+	   .birthday-surprise-footer
+	   {
+	       text-align: right;
+		   #SaveBirthdaySurprise
+		   {
+		       padding: 4px 10px;
+			   font-size: 15px;
+		   }
+	   }
+	}
+	.sign-up-birthday-surprise
+	{
+		text-align: center;
+		#SignUpBirthdaySurprise
+		{
+			 border-radius: 30px;
+			-moz-border-radius: 30px;
+			-webkit-border-radius: 30px;
+			-ms-border-radius: 30px;
+			background: $mainHeadingColor;
+		    text-transform: inherit;
+			padding: 5px 50px;
+		}
+	}
+}
+@media (max-width:$screen-xs-min)
+{
+}
