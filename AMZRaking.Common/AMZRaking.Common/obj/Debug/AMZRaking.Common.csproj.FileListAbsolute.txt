@@ -3,3 +3,8 @@ D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\bin\Debug\AMZRaking.C
 D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.csprojResolveAssemblyReference.cache
 D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.dll
 D:\Projects\MySale\trunk\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.pdb
+D:\AMZ\AMZRaking.Common\AMZRaking.Common\bin\Debug\AMZRaking.Common.dll
+D:\AMZ\AMZRaking.Common\AMZRaking.Common\bin\Debug\AMZRaking.Common.pdb
+D:\AMZ\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.csprojResolveAssemblyReference.cache
+D:\AMZ\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.dll
+D:\AMZ\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.pdb

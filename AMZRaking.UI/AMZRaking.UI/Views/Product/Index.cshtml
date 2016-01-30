@@ -1,0 +1,198 @@
+﻿@{    
+    ViewBag.Title = "Product";
+}
+<script src="../../Scripts/amz-side-bar-menu.js"></script>
+<script>
+    $(document).ready(function () {
+        amz.olc.sidebarview.views.sidebarview.initPage();
+    });
+</script>
+<div id="BodyContent">
+    <div class="row">
+        <div id="ProductContent">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="col-xs-4 col-sm-4">
+                <div class="logo">
+                    <span class="glyphicon glyphicon-align-justify hamburger" id="IconInSide"></span>
+                    <img src="~/Content/themes/base/images/amztracker-logo-white.png" class="logo-image">
+                </div>
+                <ul class="sidebar-nav">
+                    <li id="RefreshRankTable"><i class="fa fa-signal rankings-icon has-tooltip active" data-original-title="" title=""></i>Rankings</li>
+                    <li id="ShowSale"><i class="fa fa-search sales-icon has-tooltip" data-original-title="" title=""></i>Sales Tracking</li>
+                    <li id="ShowReview" class="active">
+                        <i class="fa fa-heart reviews-icon has-tooltip" id="ShowReviewIcon" data-original-title="" title=""></i>
+                        <span class="review-counter review-counter-main" style="">27</span>
+                        Negative Reviews
+                    </li>
+                    <li id="ShowIQ"><i class="fa fa-eye iq-icon"></i>On Page Analyzer</li>
+                    <li id="KeywordResearch"><i class="fa fa-key account-icon"></i>Keyword Research</li>
+
+                    <li class="separator"></li>
+
+                    <li id="ShowRedirection"><i class="fa fa-random redirection-icon has-tooltip" data-original-title="" title=""></i>Super URLs</li>
+
+                    <li id="ShowReviewTraderNew" style="font-weight: bold; color: #fff;">
+                        <i class="fa fa-gift review-trader-icon has-tooltip" data-original-title="" title=""></i>
+                        <span class="review-trader-counter review-trader-counter-main" id="ShowReviewTrader" style="display: none;"></span>
+                        New Review Club
+                    </li>
+
+                    <li class="separator"></li>
+
+                    <li id="ShowReport"><i class="fa fa-envelope reports-icon has-tooltip" data-original-title="" title=""></i>Email Reports</li>
+                    <li id="ShowAccount"><i class="fa fa-cog account-icon has-tooltip" data-original-title="" title=""></i>Account Settings</li>
+                    <li onclick="window.open('http://help.amztracker.com','_blank');"><i class="fa fa-question-circle help-icon has-tooltip" data-original-title="" title=""></i>New Help Center</li>
+                    <li onclick="window.open('http://www.unicornsmasher.com','_blank');" style="font-weight: bold; color: #F97D9F;"><i class="fa fa-gift help-icon has-tooltip" data-original-title="" title=""></i>Get Unicorn Smasher</li>
+                    <li class="separator"></li>
+
+                </ul>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/AMZtracker" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/AMZtracker" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <!-- Page Content -->
+            <div id="PageContentWrapper" class="col-xs-8 col-sm-8">
+                <div class="col-sm-12 col-md-12 top-header-fixed">
+                    <div class="col-sm-12 col-md-4 no-padding-left-right">
+                        <span class="glyphicon glyphicon-align-justify hamburger" id="IconOutSide"></span>
+                        <select class="form-control" id="SelectFilter" style="margin-left: 10px;">
+                            <option>All Products</option>
+                        </select>
+                        <select class="form-control table-main-menu" id="GraphHistory" style="margin-left: 10px;">
+                            <option value="weekly">Weekly graph history</option>
+                            <option value="monthly" selected="">Monthly graph history</option>
+                            <option value="yearly">Yearly graph history</option>
+                        </select>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-sm-12 col-md-5 no-padding-left-right">
+                        <span class="hidden-icon visible-sm"></span>
+                        <button type="button" class="btn btn-warning table-main-menu btn-keyword-research" style="margin-left: 10px;">Keyword Research</button>
+
+                        <button type="button" class="btn btn-primary table-main-menu" id="BtnAddProduct"><span class="glyphicon glyphicon-plus"></span>Add Product</button>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-sm-12 col-md-3 no-padding-left-right">
+                        <div id="DataTables_Table_0_filter" class="search-filter">
+                            <span class="hidden-icon visible-sm"></span>
+                            <input type="search" class="" aria-controls="DataTables_Table_0" placeholder="Search">
+                        </div>
+                    </div>
+
+                    <!-- <a href="https://www.amztracker.com/blog/amazon-rank-tracker/" class="btn btn-help" target="_blank"><span class="glyphicon glyphicon-question-sign"></span> Help</a> -->
+
+                    <div class="bulk-menu" style="display: none">
+                        <select class="form-control bulk-select" style="margin-left: 10px;" onchange="bulk_select()">
+                            <option value="">Select...</option>
+                            <option value="select-all">Select All</option>
+                            <option value="select-none">Select None</option>
+                            <option value="select-ranked">Select Ranked</option>
+                            <option value="select-non-ranking">Select Non-Ranking</option>
+                        </select>
+
+                        <button type="button" class="btn btn-default btn-bulk-cancel" onclick="bulk_cancel()"><span class="glyphicon glyphicon-remove"></span>Cancel</button>
+                        <button type="button" class="btn btn-danger btn-bulk-delete" onclick="bulk_delete_keywords()"><span class="glyphicon glyphicon-trash"></span>Delete Keywords</button>
+                        <button type="button" class="btn btn-success btn-bulk-export" onclick="bulk_export()"><span class="glyphicon glyphicon-list"></span>Export</button>
+                    </div>
+
+                    <button type="button" class="btn btn-show-all-keywords" onclick="show_keywords_all()">Show All Keywords</button>
+                    <button type="button" class="btn btn-hide-all-keywords" onclick="hide_keywords_all()">Hide All Keywords</button>
+                </div>
+                <div class="col-sm-12 col-md-12 content-body">
+                    <table class="table table-hover table-main dataTable no-footer" id="DataTableItem" role="grid">
+                        <thead>
+                            <tr role="row">
+                                <th class="td-chevron sorting" tabindex="0" aria-controls="DataTableItem" rowspan="1" colspan="1" aria-label=": activate to sort column ascending"></th>
+                                <th class="td-product sorting" tabindex="0" aria-controls="DataTableItem" rowspan="1" colspan="1" aria-label="Product: activate to sort column ascending">Product</th>
+                                <th class="hidden-xs hidden-sm sorting" tabindex="0" aria-controls="DataTableItem" rowspan="1" colspan="1" aria-label="Sales Rank: activate to sort column ascending">Sales Rank</th>
+                                <th class="td-ranking sorting_desc" tabindex="0" aria-controls="DataTableItem" rowspan="1" colspan="1" aria-label="Ranking: activate to sort column ascending" aria-sort="descending">Ranking</th>
+                                <th class="td-action sorting" tabindex="0" aria-controls="DataTableItem" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending">Action</th>
+                            </tr>
+                        </thead>
+                        <tr id="tr_product_518678" data-product-id="518678" data-tags="" data-keyword-count="19" role="row" class="even">
+                            <td class="td-chevron">
+                                <div class="chev-star"><span class="glyphicon glyphicon-chevron-right" style="padding-bottom: 9px;" onclick="show_keywords(518678)"></span><span class="glyphicon glyphicon-star fav-off product_fav_518678" onclick="toggle_product_favorite(518678, 13)"></span></div>
+                                <img src="http://ecx.images-amazon.com/images/I/41f1XVdCIoL.jpg" class="product-image" onclick="show_keywords(518678)"></td>
+                            <td class=" td-product">
+                                <div onclick="show_keywords(518678)" style="height: 100%;">
+                                    <p class="product_name_518678">Apple iPhone 6 16GB (4.7-inch) 4G LTE Factory Unlocked GSM Dual-Core Smartphone - Gold</p>
+                                    <p class="asin">
+                                        <img src="images/flags/om.png" style="margin-right: 10px;">B00NPPI7UC
+                                    </p>
+                                </div>
+                            </td>
+
+                            <td class=" hidden-xs hidden-sm">
+                                <div class="has-tooltip" title="" onclick="show_product_details(518678)" style="cursor: pointer;" data-original-title="Sales Rank / Rank Change.<br>Click to see Sales Rank Graph">
+                                    2,852<br>
+                                    <span style="color: #f00; font-size: 11px;">-595</span>
+                                </div>
+                                <p class="product_group">Cell Phones &amp; Accessories</p>
+                            </td>
+                            <td class="td-ranking sorting_1">
+                                <div class="group">
+                                    <div class="has-tooltip" title="" data-original-title="Highest rank of your keywords">
+                                        <span style="font-weight: bold;">3</span><div style="color: #999; font-size: 10px; margin-top: 5px;">Top</div>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="has-tooltip" title="" data-original-title="Total change in keyword ranks over past 12 hours">
+                                        <span style="color: #FF0000; font-weight: bold;">-2</span><div style="color: #999; font-size: 10px; margin-top: 5px;">Change</div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="td-action"><span class="glyphicon glyphicon-plus has-tooltip" onclick="add_keywords(518678)" title="" data-original-title="Add Keywords"></span><span class="glyphicon glyphicon-search has-tooltip" onclick="show_inventory(518678)" title="" data-original-title="Click to ENABLE monitoring of sales."></span><span class="glyphicon glyphicon-heart has-tooltip" style="margin-left: 7px;" onclick="review_toggle(518678)" title="" data-original-title="Click to ENABLE monitoring of reviews."></span><span class="glyphicon glyphicon-pencil has-tooltip" onclick="edit_product(518678)" title="" data-original-title="Edit Product"></span><a href="https://www.amztracker.com/shorten/?l=aHR0cDovL3d3dy5hbWF6b24uY29tL2RwL0IwME5QUEk3VUM%3D" target="_blank"><span class="glyphicon glyphicon-new-window has-tooltip" title="" data-original-title="Open product in Amazon"></span></a><span class="glyphicon glyphicon-trash has-tooltip" onclick="delete_product(518678)" title="" data-original-title="Delete Product"></span></td>
+                        </tr>
+                        <tr id="tr_product_512786" data-product-id="512786" data-tags="" data-keyword-count="11" role="row" class="even">
+                            <td class="td-chevron">
+                                <div class="chev-star"><span class="glyphicon glyphicon-chevron-right" style="padding-bottom: 9px;" onclick="show_keywords(512786)"></span><span class="glyphicon glyphicon-star fav-off product_fav_512786" onclick="toggle_product_favorite(512786, 13)"></span></div>
+                                <img src="http://ecx.images-amazon.com/images/I/51H8x07Fd7L.jpg" class="product-image" onclick="show_keywords(512786)"></td>
+                            <td class="td-product sorting_1">
+                                <div onclick="show_keywords(512786)" style="height: 100%;">
+                                    <p class="product_name_512786">The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing</p>
+                                    <p class="asin">
+                                        <img src="images/flags/om.png" style="margin-right: 10px;">1607747308</p>
+                                </div>
+                            </td>
+
+                            <td class=" hidden-xs hidden-sm">
+                                <div class="has-tooltip" title="" onclick="show_product_details(512786)" style="cursor: pointer;" data-original-title="Sales Rank / Rank Change.<br>Click to see Sales Rank Graph">2<br>
+                                </div>
+                                <p class="product_group">Books</p>
+                            </td>
+                            <td class=" td-ranking">
+                                <div class="group">
+                                    <div class="has-tooltip" title="" data-original-title="Highest rank of your keywords"><span style="font-weight: bold;">-</span><div style="color: #999; font-size: 10px; margin-top: 5px;">Top</div>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="has-tooltip" title="" data-original-title="Total change in keyword ranks over past 12 hours">-<div style="color: #999; font-size: 10px; margin-top: 5px;">Change</div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class=" td-action"><span class="glyphicon glyphicon-plus has-tooltip" onclick="add_keywords(512786)" title="" data-original-title="Add Keywords"></span><span class="glyphicon glyphicon-search has-tooltip" onclick="show_inventory(512786)" title="" data-original-title="Click to ENABLE monitoring of sales."></span><span class="glyphicon glyphicon-heart has-tooltip" style="margin-left: 7px;" onclick="review_toggle(512786)" title="" data-original-title="Click to ENABLE monitoring of reviews."></span><span class="glyphicon glyphicon-pencil has-tooltip" onclick="edit_product(512786)" title="" data-original-title="Edit Product"></span><a href="https://www.amztracker.com/shorten/?l=aHR0cDovL3d3dy5hbWF6b24uY29tL2RwLzE2MDc3NDczMDg%3D" target="_blank"><span class="glyphicon glyphicon-new-window has-tooltip" title="" data-original-title="Open product in Amazon"></span></a><span class="glyphicon glyphicon-trash has-tooltip" onclick="delete_product(512786)" title="" data-original-title="Delete Product"></span></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </tr>
+                    </table>
+                </div>
+                <!-- /#page-content-wrapper -->
+            </div>
+        </div>
+    </div>
+</div>

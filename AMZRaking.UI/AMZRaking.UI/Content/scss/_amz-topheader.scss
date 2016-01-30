@@ -1,0 +1,116 @@
+#PageContentWrapper
+{
+	.top-header-fixed
+	{
+		position: absolute;
+		z-index: 1000;
+		width: 100%;
+		transition: padding-left 0.1s linear !important;
+		padding-left: 0;
+		padding-right: 0;
+		min-height: 60px;
+		background-color: #fff;
+		z-index: 800;
+		-webkit-box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+		box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+		.no-padding-left-right
+		{
+			padding-right: 0;
+		}
+		.hamburger
+		{
+			color: #999;
+			font-size: 20px;
+			top: 16px;
+			left: 10px;
+			float: left;
+			padding: 0px 7px;
+			cursor: pointer;
+		}
+		.hidden-icon
+		{
+			width: 29px;
+			height: 20px;
+			display: inline-block;
+		}	
+		#SelectFilter, #GraphHistory, .bulk-select, .inventory-history {
+			width: auto;
+			background-color: #fff !important;
+			margin: 10px 0 20px 0;
+			float: left;
+		}
+		
+		#GraphHistory,#SelectFilter
+		{
+			 width: 40%;
+		}
+		#BtnAddProduct,.btn-keyword-research
+		{
+			 width: 40%;
+		}
+		#BtnAddProduct, .btn-bulk-cancel {
+			margin: 10px 0 20px 0;
+			margin-left: 10px;
+		}
+
+		.btn-keyword-research, .btn-bulk-export, .btn-bulk-delete, .btn-bulk-refresh, .btn-bulk-request-hide, .btn-bulk-email-voucher {
+			margin: 10px 0px 20px 0;
+		}
+
+		.form-control
+		{
+			border-radius: 0;
+			box-shadow: none;
+		}
+		.btn
+		{
+			border-radius: 0 !important;
+		}
+		.search-filter
+		{
+			margin: 10px 0 20px 0;
+			label
+			{
+				font-weight: normal;
+				font-size: 12px;
+				color: #6F7B8A;
+			}
+			input
+			{
+				margin-left: 10px;
+				border: 1px solid #999;
+				width:82%
+			}
+		}
+	}
+
+	.content-body
+	{
+		padding-top: 70px;
+		min-height: 200px;
+		overflow-y: auto;
+		position: absolute;
+
+		
+	}
+	
+}
+
+@media (max-width: 1600px)
+{
+	.btn.btn-show-all-keywords, .btn.btn-hide-all-keywords {
+		display: none;
+	}
+}
+
+@media (max-width: 1280px)
+{
+	.btn.btn-keyword-research {
+		display: none;
+	}
+
+	#BtnAddProduct
+	{
+		width: 50%;
+	}
+}

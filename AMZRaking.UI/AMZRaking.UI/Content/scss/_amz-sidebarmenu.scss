@@ -1,0 +1,178 @@
+﻿#ProductContent {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#ProductContent.toggled {
+    padding-left: 250px;
+}
+
+#ProductContent.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#ProductContent.toggled #PageContentWrapper {
+    position: relative;
+    margin-right: -250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    margin-left: -233px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	padding-left: 0;
+    padding-right: 0;
+}
+
+#sidebar-wrapper .logo
+{
+	background: $logobg;
+	//background: white;
+	height: 64px;
+	.logo-image
+	{
+		cursor: pointer; 
+		width: 160px;
+		margin: -15px 0 0 20px;
+	}
+	.hamburger
+	{
+		color: white;
+		font-size: 20px;
+		top: 10px;
+		left: 10px;
+		cursor: pointer;
+	}
+}
+
+
+
+#PageContentWrapper {
+    width: 100%;
+    position: relative;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
+/* Sidebar Styles */
+.sidebar-nav {
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+	color: #999;
+    padding-left: 10px;
+    position: relative;
+    transition: border 0.1s linear 0s, color 0.1s linear 0s;
+}
+
+.sidebar-nav li.separator {
+    border-top: 1px solid #666;
+    height: 4px;
+    margin: 8px 15px;
+    list-style: none; 
+}
+
+.sidebar-nav li .fa {
+    float: none;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: -20px;
+    margin-right: 10px;
+}
+     
+.sidebar-nav li .review-counter, .sidebar-nav li .review-trader-counter
+{
+	top: 13px;
+    right: 20px;
+    left: inherit;
+    background-color: #666;
+    padding: 1px 6px 0 5px;
+	width: 25px;
+    text-indent: 0px !important;
+}
+
+ .sidebar-nav li:hover, .sidebar-nav li:hover .fa, .sidebar-nav li.active, .sidebar-nav li.active .fa 
+ {
+	color: #fff;
+    cursor: pointer;
+ }
+
+ .sidebar-nav li.active {
+    background-color: #2C3235;
+}
+ .sidebar-nav li.active .review-counter, .sidebar-nav li.active .review-trader-counter {
+    background-color: #f35958;
+}
+
+.review-counter, .review-trader-counter, .confirmed-counter
+{
+	position: absolute;
+    top: -18px;
+    left: 14px;
+    background-color: #f35958;
+    border-radius: 9px;
+    height: 18px;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1px 6px 0 5px;
+}
+
+ .social-link
+ {
+   text-align:center;
+   a {
+    transition: color 0.1s linear 0s,background-color 0.1s linear 0s !important;
+	}
+ }
+
+ //End SideBar Styles
+
+ //Media Styles
+/*@media(min-width:768px) {
+    #ProductContent {
+        padding-left: 125px;
+    }
+
+    #ProductContent.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #ProductContent.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #PageContentWrapper {
+        position: relative;
+    }
+
+    #ProductContent.toggled #PageContentWrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}*/
