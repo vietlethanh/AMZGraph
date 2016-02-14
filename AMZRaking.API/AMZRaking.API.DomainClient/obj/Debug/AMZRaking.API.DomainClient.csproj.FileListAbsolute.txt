@@ -8,3 +8,7 @@ D:\AMZ\AMZRaking.API\AMZRaking.API.DomainClient\bin\Debug\AMZRaking.API.DomainCl
 D:\AMZ\AMZRaking.API\AMZRaking.API.DomainClient\obj\Debug\AMZRaking.API.DomainClient.csprojResolveAssemblyReference.cache
 D:\AMZ\AMZRaking.API\AMZRaking.API.DomainClient\obj\Debug\AMZRaking.API.DomainClient.dll
 D:\AMZ\AMZRaking.API\AMZRaking.API.DomainClient\obj\Debug\AMZRaking.API.DomainClient.pdb
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.DomainClient\bin\Debug\AMZRaking.API.DomainClient.dll
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.DomainClient\bin\Debug\AMZRaking.API.DomainClient.pdb
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.DomainClient\obj\Debug\AMZRaking.API.DomainClient.dll
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.DomainClient\obj\Debug\AMZRaking.API.DomainClient.pdb

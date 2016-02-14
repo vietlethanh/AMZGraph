@@ -8,3 +8,8 @@ D:\AMZ\AMZRaking.API\AMZRaking.API.ServiceClient.Test\bin\Debug\AMZRaking.API.Se
 D:\AMZ\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.csprojResolveAssemblyReference.cache
 D:\AMZ\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.dll
 D:\AMZ\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.pdb
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.ServiceClient.Test\bin\Debug\AMZRaking.API.ServiceClient.Test.dll
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.ServiceClient.Test\bin\Debug\AMZRaking.API.ServiceClient.Test.pdb
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.csprojResolveAssemblyReference.cache
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.dll
+D:\AMZGraph\AMZRaking.API\AMZRaking.API.ServiceClient.Test\obj\Debug\AMZRaking.API.ServiceClient.Test.pdb

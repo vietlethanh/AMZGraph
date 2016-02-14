@@ -3,3 +3,8 @@ D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Data\bin\Debug\AMZRaking.Data.p
 D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Data\obj\Debug\AMZRaking.Data.csprojResolveAssemblyReference.cache
 D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Data\obj\Debug\AMZRaking.Data.dll
 D:\Projects\MySale\trunk\AMZRaking.API\AMZRaking.Data\obj\Debug\AMZRaking.Data.pdb
+D:\AMZGraph\AMZRaking.API\AMZRaking.Data\bin\Debug\AMZRaking.Data.dll
+D:\AMZGraph\AMZRaking.API\AMZRaking.Data\bin\Debug\AMZRaking.Data.pdb
+D:\AMZGraph\AMZRaking.API\AMZRaking.Data\obj\Debug\AMZRaking.Data.csprojResolveAssemblyReference.cache
+D:\AMZGraph\AMZRaking.API\AMZRaking.Data\obj\Debug\AMZRaking.Data.dll
+D:\AMZGraph\AMZRaking.API\AMZRaking.Data\obj\Debug\AMZRaking.Data.pdb
