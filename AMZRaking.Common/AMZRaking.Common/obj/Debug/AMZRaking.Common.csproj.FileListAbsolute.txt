@@ -10,6 +10,5 @@ D:\AMZ\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.dll
 D:\AMZ\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.pdb
 D:\AMZGraph\AMZRaking.Common\AMZRaking.Common\bin\Debug\AMZRaking.Common.dll
 D:\AMZGraph\AMZRaking.Common\AMZRaking.Common\bin\Debug\AMZRaking.Common.pdb
-D:\AMZGraph\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.csprojResolveAssemblyReference.cache
 D:\AMZGraph\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.dll
 D:\AMZGraph\AMZRaking.Common\AMZRaking.Common\obj\Debug\AMZRaking.Common.pdb
