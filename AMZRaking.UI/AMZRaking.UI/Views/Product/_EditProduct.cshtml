@@ -1,0 +1,82 @@
+﻿<div id="EditProduct">
+    <div class="modal-header edit-product-header">
+        <h4 class="modalName">Edit Product</h4>
+    </div>
+
+    <div class="modal-body edit-product-body">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active" onclick="$('.merchant-id-field').show();"><a href="#product-details" role="tab" data-toggle="tab">Details</a></li>
+            <li onclick="$('.merchant-id-field').hide();"><a href="#product-variations" role="tab" data-toggle="tab">Variations</a></li>
+            <li onclick="$('.merchant-id-field').hide();"><a href="#redirection-link" role="tab" data-toggle="tab">Super URLs</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <form>
+            <div class="tab-content">
+                <div class="tab-pane active" id="product-details">
+                    <div class="form-horizontal">
+                        <input type="hidden" name="product_id" value="">
+
+                        <div class="form-group">
+                            <label for="product_name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Product Name" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product_tag" class="col-sm-2 control-label">Tags</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="product_tags" name="product_tags" placeholder="Product Tags" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="redirection-link">
+                    <div class="form-horizontal">
+                        <p>There are no Super URLs associated with this product. <span class="clickable" style="text-decoration: underline;" onclick="$('.modal').modal('hide'); show_redirection('');">Click here</span> to manage your Super URLs.</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="product-variations">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left">ASIN</th>
+                                <th style="text-align: left">Attributes</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left;"><a href="http://www.amazon.com/dp/B015E8UHY6" target="_blank">B015E8UHY6</a></td>
+                                <td style="text-align: left;">Space Gray,64 GB</td>
+                            </tr>                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="form-horizontal merchant-id-field">
+                <div class="form-group">
+                    <label for="product_merchant_id" class="col-sm-2 control-label">Merchant ID</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="merchant_id" name="merchant_id" value="" placeholder="Optional">
+                        <a href="https://www.amztracker.com/blog/amazon-super-url/#find-merchant-id" target="_blank">How do I find the Merchant ID?</a>
+                        <button type="button" class="btn btn-xs pull-right" onclick="check_merchant_id_product('www.amazon.com', 'B015KHA1GA')">
+                            Check Merchant ID
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="modal-footer edit-product-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="BtnSaveEditProduct">Save</button>
+    </div>
+</div>

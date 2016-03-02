@@ -207,10 +207,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\bootstrap-theme.css" />
-    <Content Include="Content\css\bootstrap-theme.min.css" />
-    <Content Include="Content\css\bootstrap.css" />
-    <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\jquery.dataTables.custom.css" />
     <Content Include="Content\css\jquery.dataTables.min.css" />
@@ -260,7 +256,6 @@
     <Content Include="package.json" />
     <Content Include="Content\scss\Style.scss" />
     <Content Include="Content\scss\_account.scss" />
-    <Content Include="Content\scss\_base.scss" />
     <Content Include="Content\scss\_cms-content.scss" />
     <Content Include="Content\scss\_form.scss" />
     <Content Include="Content\scss\_icon.scss" />
@@ -273,17 +268,13 @@
     <Content Include="Content\scss\_variables.scss" />
     <Content Include="Content\scss\_product.scss" />
     <Content Include="Content\scss\_amz-sidebarmenu.scss" />
+    <Content Include="Content\scss\_amz-topheader.scss" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Content\scss\_amz-topheader.scss" />
-    <Content Include="Content\scss\site.scss" />
+    <Content Include="Content\scss\_site.scss" />
     <Content Include="Content\scss\_bootstrap.scss" />
-    <Content Include="Content\css\bootstrap-theme.css.map" />
-    <Content Include="Content\css\bootstrap-theme.min.css.map" />
-    <Content Include="Content\css\bootstrap.css.map" />
-    <Content Include="Content\css\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="gulpfile.js" />
     <Content Include="Scripts\amz-core.js" />
@@ -328,6 +319,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jssrc\amz-core.js" />
     <Content Include="Scripts\jssrc\amz-form.js" />
+    <Content Include="Scripts\jssrc\amz-product.js" />
     <Content Include="Scripts\jssrc\amz-side-bar-menu.js" />
     <Content Include="Scripts\jssrc\amz-ui.js" />
     <Content Include="Scripts\jssrc\amz-url.js" />
@@ -386,7 +378,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\_SideBarMenu.cshtml" />
+    <Content Include="Views\Product\_AddProduct.cshtml" />
+    <Content Include="Views\Product\_AddProductKeyword.cshtml" />
+    <Content Include="Views\Product\_EditProduct.cshtml" />
+    <Content Include="Views\Product\_KeywordResearch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

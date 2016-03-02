@@ -13,10 +13,6 @@
 		z-index: 800;
 		-webkit-box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
 		box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
-		.no-padding-left-right
-		{
-			padding-right: 0;
-		}
 		.hamburger
 		{
 			color: #999;
@@ -86,10 +82,10 @@
 
 	.content-body
 	{
-		padding-top: 70px;
+		padding-top: 80px;
 		min-height: 200px;
 		overflow-y: auto;
-		position: absolute;
+		position: inherit;
 
 		
 	}

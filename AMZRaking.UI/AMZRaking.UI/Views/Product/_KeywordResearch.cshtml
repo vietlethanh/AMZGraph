@@ -1,0 +1,53 @@
+﻿<div id="KeywordResearch">
+    <div class="modal-header keyword-research-header">
+        <h4 class="modalName">Keyword Research</h4>
+    </div>
+
+    <div class="modal-body keyword-research-body">
+        <div class="row" id="keyword-research">
+            <div class="col-xs-12 col-sm-4 suggestions-column1">
+                <select class="form-control" name="suggestion-product-id" onchange="">
+                </select>
+
+                <textarea class="form-control" name="seed" rows="10" placeholder="Seed keywords. One per line."></textarea>
+
+                <select class="form-control" name="domain" style="margin: 10px 0">
+                    <option>www.amazon.com</option>
+                    <option>www.amazon.co.uk</option>
+                    <option>www.amazon.com.br</option>
+                    <option>www.amazon.ca</option>
+                    <option>www.amazon.cn</option>
+                    <option>www.amazon.fr</option>
+                    <option>www.amazon.de</option>
+                    <option>www.amazon.in</option>
+                    <option>www.amazon.it</option>
+                    <option>www.amazon.co.jp</option>
+                    <option>www.amazon.es</option>
+                </select>
+
+                <button type="button" class="btn btn-primary btn-generate-suggestions" onclick="" style="width: 100%">Generate Suggestions</button>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 suggestios-column2">
+                <div class="suggestions-heading">Keyword Suggestions</div>
+
+                <div class="suggestions-list"></div>
+
+                <button type="button" class="btn btn-primary btn-copy-to-seed" onclick=""><span class="glyphicon glyphicon-arrow-left"></span>To Seed</button>
+                <button type="button" class="btn btn-primary btn-copy-to-keyword" onclick="">To Keywords <span class="glyphicon glyphicon-arrow-right"></span></button>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="suggestions-heading">Keywords List</div>
+                <textarea class="form-control" name="keywords"></textarea>
+                <button type="button" class="btn btn-primary btn-add-keyword-suggestions" onclick="" style="width: 100%"><span class="glyphicon glyphicon-plus"></span>Add Keywords</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-footer keyword-research-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+</div>

@@ -16,5 +16,25 @@ namespace AMZRaking.UI.Controllers
             return View();
         }
 
+        public ActionResult AddProduct()
+        {
+            return PartialView("_AddProduct");
+        }
+
+        public ActionResult AddProductKeyword()
+        {
+            return PartialView("_AddProductKeyword");
+        }
+
+        public ActionResult EditProduct()
+        {
+            return PartialView("_EditProduct");
+        }
+
+        public ActionResult KeywordResearch()
+        {
+            return PartialView("_KeywordResearch");
+        }
+
     }
 }

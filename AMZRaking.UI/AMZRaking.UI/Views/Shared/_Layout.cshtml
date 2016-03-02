@@ -1,49 +1,51 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        @Styles.Render("~/Content/css")
-        @Styles.Render("~/Content/Style.css")
-        @Scripts.Render("~/Scripts/bootstrap.min.js")
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link href="../../Content/css/jquery.dataTables.min.css" rel="stylesheet">
-        <link href="../../Content/css/jquery.dataTables.custom.css" rel="stylesheet">
-        <link href="../../Content/css/bootstrap.min.css" rel="stylesheet">
-        <script src="../../Scripts/jquery-2.2.0.min.js"></script>
-        <script src="../../Scripts/jquery.dataTables.min.js"></script>
-        <script src="../../Scripts/core.js"></script>
-        <script src="../../Scripts/config.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                            <li>@Html.ActionLink("Product", "Index", "Product")</li>
-                        </ul>
-                    </nav>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    @Styles.Render("~/Content/Style.css")
+    <link href="../../Content/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../Content/css/jquery.dataTables.custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+    <script src="../../Scripts/jquery-2.2.0.min.js"></script>
+    <script src="../../Scripts/jquery.dataTables.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/bootbox.js"></script>
+    <script src="../../Scripts/core.js"></script>
+    <script src="../../Scripts/config.js"></script>
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
             </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            @RenderBody()
+            <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+                <nav>
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Product", "Index", "Product")</li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-       
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+    </header>
+    <div id="body">
+        @RenderSection("featured", required: false)
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
 </html>

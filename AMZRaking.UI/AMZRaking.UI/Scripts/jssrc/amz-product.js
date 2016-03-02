@@ -5,19 +5,9 @@
 
     // Data Service ----------------------------------------------------------
     var dataService = {
-        addProduct: function () {
-            return $.post(olc.sidebarview.data.AddProductUrl, null);
-        },
         addKeyword: function () {
-            return $.post(olc.sidebarview.data.AddProducKeywordUrl, null);
-        },
-        editProduct: function () {
-            return $.post(olc.sidebarview.data.EditProductUrl, null);
-        },
-        keywordResearch: function () {
-            return $.post(olc.sidebarview.data.KeywordResearchUrl, null);
-        },
-        
+            return $.post(olc.sidebarview.data.AddProductUrl, null);
+        }
     };
 
     //Views----------------------------------------------------------
@@ -50,36 +40,6 @@
                     });
                     $('.modal-dialog').addClass("modal-lg");
                 });
-            });
-            
-            $("#AddKeyword").click(function (e) {
-                dataService.addKeyword().done(function (result) {
-                    bootbox.dialog({
-                        message: result,
-                        title: ""
-                    });
-                });
-            });
-            
-            $("#EditProduct").click(function (e) {
-                dataService.editProduct().done(function (result) {
-                    bootbox.dialog({
-                        message: result,
-                        title: ""
-                    });
-                    $('.modal-dialog').addClass("modal-lg");
-                });
-            });
-
-            $(".btn-keyword-research").click(function (e) {
-                dataService.keywordResearch().done(function (result) {
-                    bootbox.dialog({
-                        message: result,
-                        title: ""
-                    });
-                    $('.modal-dialog').addClass("modal-lg");
-                });
-                
             });
         }
     };

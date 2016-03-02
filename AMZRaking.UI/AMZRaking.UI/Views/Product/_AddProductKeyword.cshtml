@@ -1,0 +1,41 @@
+﻿<div id="AddProductKeyword">
+    <div class="modal-header add-keyword-header">
+        <h4 class="modalName">Add Keywords</h4>
+    </div>
+
+    <div class="modal-body add-keyword-body">
+        <input type="hidden" name="product_id" value="">
+
+        <div class="inner-body">
+            Type keywords in the following box. One keyword per line.
+
+            <select class="form-control copy-keyword-from" name="copy-keywords-from">
+                <option value="-1">Copy keywords from...</option>
+            </select>
+
+            <textarea class="form-control" rows="10" name="keywords" placeholder="Type keywords here"></textarea>
+
+            <div class="form-group">
+                <select class="form-control keyword-domain" name="keyword_domain">
+                    <option selected="">www.amazon.com</option>
+                    <option>www.amazon.co.uk</option>
+                    <option>www.amazon.com.br</option>
+                    <option>www.amazon.ca</option>
+                    <option>www.amazon.cn</option>
+                    <option>www.amazon.fr</option>
+                    <option>www.amazon.de</option>
+                    <option>www.amazon.in</option>
+                    <option>www.amazon.it</option>
+                    <option>www.amazon.co.jp</option>
+                    <option>www.amazon.es</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-footer add-keyword-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="BtnAddKeyword">Add Keywords</button>
+    </div>
+</div>
